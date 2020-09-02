@@ -7,7 +7,8 @@ int('0x{}'.format(16진수 수), 16)꼴의 함수를 사용해 풀 수 있다.
 
 import sys
 
-a = input()
+a = sys.stdin.readline().rstrip()
 
 b = int('0x{}'.format(a), 16)
+
 print(b)
