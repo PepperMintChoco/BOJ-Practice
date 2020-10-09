@@ -5,8 +5,6 @@
 
 import sys
 
-a = int(sys.stdin.readline())
-b = int(sys.stdin.readline())
+a, b, k = map(int,sys.stdin.readline().split())
 
-print((a - b) // 2 + b)
-print((a - b) // 2)
+print((a//k)*(b//k) - max(0, (a//k-2)) * max(0, (b//k-2)))
